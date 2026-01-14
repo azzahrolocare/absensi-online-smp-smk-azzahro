@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial Instalasi Absensi Az-Zahro</title>
+    <title>Tutorial Instalasi Absensi Online Az-Zahro</title>
     <style>
         :root {
             --primary-color: #e74c3c;
             --secondary-color: #2c3e50;
-            --bg-color: #f9f9f9;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
         }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -25,115 +26,130 @@
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
+        .header-note {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ffeeba;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
         h1 {
             text-align: center;
             color: var(--secondary-color);
-            border-bottom: 3px solid var(--primary-color);
-            padding-bottom: 10px;
+            margin-top: 0;
         }
         .step {
-            margin-bottom: 35px;
-            padding: 15px;
+            margin-bottom: 30px;
             border: 1px solid #eee;
             border-radius: 10px;
-            transition: transform 0.2s;
-        }
-        .step:hover {
-            transform: scale(1.01);
-            border-color: var(--primary-color);
+            overflow: hidden;
         }
         .step img {
             width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 15px;
             display: block;
         }
-        .step-text {
+        .step-info {
+            padding: 15px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
         }
         .badge {
             background: var(--primary-color);
             color: white;
-            padding: 5px 12px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
             font-weight: bold;
             margin-right: 15px;
-            margin-top: 3px;
+            flex-shrink: 0;
         }
-        .instruction {
-            flex: 1;
+        .instruction-text b {
+            color: var(--primary-color);
         }
-        .instruction h3 {
-            margin: 0 0 8px 0;
-            color: var(--secondary-color);
-        }
-        .instruction p {
-            margin: 0;
-            color: #555;
-        }
-        .success-banner {
-            background: #d4edda;
-            color: #155724;
-            padding: 20px;
-            border-radius: 10px;
+        .footer-action {
             text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed #eee;
+        }
+        .btn-install {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
             font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+        }
+        .btn-install:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Cara Instal Aplikasi</h1>
+    <div class="header-note">
+        ⚠️ Mohon gunakan aplikasi <b>Google Chrome</b> untuk mengikuti tutorial ini agar fitur instalasi berjalan dengan baik.
+    </div>
+
+    <h1>Tutorial Instalasi</h1>
 
     <div class="step">
-        <img src="Tahap 1.jpg" alt="Tahap 1">
-        <div class="step-text">
+        <img src="Tahap 1.jpg" alt="Buka Menu">
+        <div class="step-info">
             <span class="badge">1</span>
-            <div class="instruction">
-                <h3>Buka Menu Browser</h3>
-                <p>Klik <b>ikon titik tiga (⋮)</b> di pojok kanan atas browser Chrome Anda sesuai arah panah merah.</p>
+            <div class="instruction-text">
+                Klik <b>ikon titik tiga (⋮)</b> di pojok kanan atas browser sesuai arah panah.
             </div>
         </div>
     </div>
 
     <div class="step">
-        <img src="Tahap 2.jpg" alt="Tahap 2">
-        <div class="step-text">
+        <img src="Tahap 2.jpg" alt="Pilih Menu">
+        <div class="step-info">
             <span class="badge">2</span>
-            <div class="instruction">
-                <h3>Pilih Tambah ke Layar Utama</h3>
-                <p>Cari dan klik pilihan <b>"Tambahkan ke Layar Utama"</b> yang ditunjuk oleh panah merah.</p>
+            <div class="instruction-text">
+                Pilih menu <b>"Tambahkan ke Layar Utama"</b> pada daftar yang muncul.
             </div>
         </div>
     </div>
 
     <div class="step">
-        <img src="Tahap 3.jpg" alt="Tahap 3">
-        <div class="step-text">
+        <img src="Tahap 3.jpg" alt="Klik Instal">
+        <div class="step-info">
             <span class="badge">3</span>
-            <div class="instruction">
-                <h3>Konfirmasi Instalasi</h3>
-                <p>Akan muncul pop-up baru, klik tombol <b>"Instal"</b> pada bagian atas yang ditunjuk panah untuk memasang aplikasi di HP Anda.</p>
+            <div class="instruction-text">
+                Klik tombol <b>"Instal"</b> pada jendela konfirmasi yang ditunjuk panah.
             </div>
         </div>
     </div>
 
     <div class="step">
-        <img src="Selesai.jpg" alt="Selesai">
-        <div class="step-text">
+        <img src="Selesai.jpg" alt="Hasil Selesai">
+        <div class="step-info">
             <span class="badge">✓</span>
-            <div class="instruction">
-                <h3>Selesai!</h3>
-                <p>Aplikasi <b>Absensi Az-Zahro</b> kini sudah muncul di layar beranda HP Anda dan siap digunakan kapan saja.</p>
+            <div class="instruction-text">
+                <b>Selesai!</b> Aplikasi sekarang sudah terpasang di layar utama HP Anda.
             </div>
         </div>
     </div>
 
-    <div class="success-banner">
-        🎉 Tutorial Selesai. Selamat Mengabsen!
+    <div class="footer-action">
+        <p>Klik tombol di bawah untuk membuka aplikasi:</p>
+        <a href="https://masrahmat-id.github.io/absensi-barcode-online-smp-smk-azzahro/" class="btn-install">
+            PASANG ABSENSI
+        </a>
     </div>
 </div>
 
